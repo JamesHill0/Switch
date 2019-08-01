@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+
+<h1 id="h1">My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+<div id="curtain">
+	<h2 id="touch">TOUCH ANYWHERE TO CONTINUE</h2>
+</div>
+
+</body>
+
+<script src="bower_components/jquery/jquery.js"></script>
+
+<script>
+    $(document).ready(function(){
+    	$("#curtain").click(function() {
+    		$("#curtain").slideUp(180);
+    	});
+
+        // $("#curtain").hide(300).show(300);
+    });
+</script>
+
+
+
+
+
+</html>
